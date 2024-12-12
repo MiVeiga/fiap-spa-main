@@ -1,9 +1,7 @@
-import dynamic from 'next/dynamic';
-
-const Header = dynamic(() => import('../Header/Header'), { ssr: false });
+import Header from '../Header/Header';
 import Menu from '../Menu/Menu';
 import Summary from '../Summary/Summary';
-const NewTransaction = dynamic(() => import('../NewTransaction/NewTransaction'), { ssr: false });
+import NewTransaction from '../NewTransaction/NewTransaction';
 import Statement from '../Statement/Statement';
 
 import styles from "./MainPage.module.scss"

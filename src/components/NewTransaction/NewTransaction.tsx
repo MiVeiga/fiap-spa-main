@@ -1,9 +1,8 @@
-'use client'
 import { useState } from 'react';
 
 import Select from '../Select/Select';
 
-import { parseMoneyValue } from '@/app/utils/stringUtils';
+import { parseMoneyValue } from '../../utils/stringUtils';
 
 import styles from "./NewTransaction.module.scss"
 

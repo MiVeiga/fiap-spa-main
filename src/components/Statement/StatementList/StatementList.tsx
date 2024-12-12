@@ -1,9 +1,8 @@
-'use client'
 import { capitalize } from "lodash";
 
 import SingleStatement from "../SingleStatement/SingleStatement";
 
-import { Statement } from "@/app/models/Statement";
+import { Statement } from "../../../models/Statement";
 
 import styles from "./StatementList.module.scss"
 

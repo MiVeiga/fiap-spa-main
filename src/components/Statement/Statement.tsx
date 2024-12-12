@@ -1,13 +1,11 @@
-'use client'
 import { useState } from 'react';
-import Image from 'next/image';
 
-import IconButton from '@mui/material/IconButton';
-import Delete from "@/app/images/Delete.svg";
-import Edit from "@/app/images/Edit.svg";
+import {ReactComponent as IconButton} from '@mui/material/IconButton';
+import {ReactComponent as Delete} from "@/app/images/Delete.svg";
+import {ReactComponent as Edit} from "@/app/images/Edit.svg";
 import StatementList from './StatementList/StatementList';
 
-import { getStatementByMonth } from '@/app/utils/statementUtils';
+import { getStatementByMonth } from '../../utils/statementUtils';
 
 import styles from "./Statement.module.scss"
 
@@ -51,16 +49,14 @@ export default function Statement(props: StatementProps) {
         <span className={styles.headerTitle}>Extrato</span>
         <span className={styles.headerButtonsContainer}>
           <IconButton className={styles.headerButton} onClick={() => setIsEditing(!isEditing)}>
-            <Image 
-              src={Edit}
+            <Edit 
               alt="Editar"
               height={22}
               width={22}
             />
           </IconButton>
           <IconButton className={styles.headerButton}>
-            <Image 
-              src={Delete}
+            <Delete 
               alt="Remover"
               height={40}
               width={40}

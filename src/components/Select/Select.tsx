@@ -1,4 +1,3 @@
-'use client'
 import { isNil } from "lodash";
 import cn from "classnames";
 import { useEffect, useState } from "react";

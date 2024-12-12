@@ -1,14 +1,11 @@
-'use client'
 import { useState } from 'react';
-import { isNil } from 'lodash';
 import cn from 'classnames';
-import Image from 'next/image';
 
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 
-import Avatar from "@/app/images/Avatar.svg";
-import Fechar from "@/app/images/Fechar.svg";
+import {ReactComponent as Avatar} from "../../images/Avatar.svg";
+import {ReactComponent as Fechar} from "../../images/Fechar.svg";
 
 import styles from "./Header.module.scss"
 
@@ -22,7 +19,7 @@ export default function Header(props: HeaderProps) {
     return (
       <span className={styles.userNameContainer}>
         <span className={styles.userName}>Joana da Silva Oliveira</span>
-        <Image src={Avatar} alt='Avatar' height={40} width={40}/>
+        <Avatar alt='Avatar' height={40} width={40}/>
       </span>
     );
   }
@@ -33,7 +30,7 @@ export default function Header(props: HeaderProps) {
         <IconButton onClick={() => setIsMenuOpen(true)}>
           <MenuIcon className={styles.menuIcon}/>
         </IconButton>
-        <Image src={Avatar} alt='Avatar' height={40} width={40}/>
+        <Fechar alt='Avatar' height={40} width={40}/>
       </div>
     );
   }
@@ -43,8 +40,7 @@ export default function Header(props: HeaderProps) {
       <div className={styles.mobileMenuContainer} onClick={() => setIsMenuOpen(false)}>
         <div className={styles.mobileMenu}>
           <span className={styles.closeButton}>
-            <Image 
-              src={Fechar}
+            <Fechar 
               alt='Fechar'
               height={16}
               width={16}

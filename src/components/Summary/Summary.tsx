@@ -1,12 +1,10 @@
-'use client'
 import { useState } from "react";
 import cn from "classnames";
-import Image from "next/image";
 
-import Eye from "@/app/images/Eye.svg";
+import {ReactComponent as Eye} from "../../images/Eye.svg";
 
-import { parseDateString } from "@/app/utils/dateUtils";
-import { parseMoneyValue } from "@/app/utils/stringUtils";
+import { parseDateString } from "../../utils/dateUtils";
+import { parseMoneyValue } from "../../utils/stringUtils";
 
 import styles from "./Summary.module.scss"
 
@@ -45,8 +43,7 @@ export default function Summary(props: SummaryProps) {
           <span className={styles.balance}>
             Saldo
           </span>
-          <Image 
-            src={Eye}
+          <Eye 
             alt='eye'
             height={20}
             width={20}

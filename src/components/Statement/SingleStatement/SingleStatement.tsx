@@ -1,9 +1,8 @@
-'use client'
 import { useEffect, useState } from "react";
 
-import { parseMoneyValue } from "@/app/utils/stringUtils";
+import { parseMoneyValue } from "../../../utils/stringUtils";
 
-import { Statement } from "@/app/models/Statement";
+import { Statement } from "../../../models/Statement";
 
 import styles from "./SingleStatement.module.scss"
 
