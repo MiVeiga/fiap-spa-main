@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import {ReactComponent as IconButton} from '@mui/material/IconButton';
-import {ReactComponent as Delete} from "@/app/images/Delete.svg";
-import {ReactComponent as Edit} from "@/app/images/Edit.svg";
+import IconButton from '@mui/material/IconButton';
+import {ReactComponent as Delete} from "../../images/Delete.svg";
+import {ReactComponent as Edit} from "../../images/Delete.svg";
 import StatementList from './StatementList/StatementList';
 
 import { getStatementByMonth } from '../../utils/statementUtils';
